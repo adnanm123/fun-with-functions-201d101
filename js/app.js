@@ -104,13 +104,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let product1 = multiply(multArr[0], multArr[1]);
+  let product1Result = multiply(product1[0], multArr[2])[0];
+  let product1Message = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${product1Result}.`;
+  return [product1Result, product1Message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
